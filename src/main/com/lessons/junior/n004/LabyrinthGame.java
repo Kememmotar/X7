@@ -13,6 +13,7 @@ public class LabyrinthGame {
         count = labyrinthsFactory.getLabyrinthCount();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose labyrinth (1 - " + count);
+
         while (number < 1 || number > count) {
             if (scanner.hasNextInt())
                 number = scanner.nextInt();
